@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="/css projects/2nd project/images/login.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            <img src="/3rdproject/image.png" class="illustration">
+            <p class="tagline">Deal making just got easier for asset managers!</p>
+        </div>
+        <div class="right-panel">
+            <h2>Log In</h2>
+            <form id="loginForm" action="javascript:void(0);" method="post">
+                <input type="text" name="username" placeholder="User name" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="text" name="entitycode" placeholder="Entity code" required>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="keepmesignedin">
+                        Keep me signed in
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" onclick="redirectToRegistration()">Log In</button>
+                <div class="divider">or</div>
+                <button type="button" class="social-login google-login">
+                    <img src="/3rdproject/images/google.png" alt="Google Logo"> Continue with Google
+                </button>
+                <button type="button" class="social-login facebook-login">
+                    <img src="/css projects/2nd project/images/facebookk.jpg" alt="Facebook Logo"> Continue with Facebook
+                </button>
+                <button type="button" class="social-login twitter-login">
+                    <img src="/css projects/2nd project/images/twitter.png" alt="Twitter Logo"> Continue with Twitter
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function redirectToRegistration() {
+            window.location.href = 'registration.html';
+        }
+    </script>
+</body>
+</html>

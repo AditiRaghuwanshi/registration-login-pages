@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="/css projects/2nd project/images/registration.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            <img class="illustration" src="/login/images/registration.png" alt="Illustration">
+        </div>
+        <div class="right-panel">
+            <h2>Registration</h2>
+            <form id="registrationForm" action="javascript:void(0);" method="post">
+                <div class="form-group">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="text" name="position" placeholder="Position you are applying for" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="country" placeholder="Country" required>
+                    <input type="text" name="city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+                </div>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="other" required> Other</label>
+                    <label><input type="radio" name="gender" value="prefer-not-to-say" required> Prefer not to say</label>
+                </div>
+                <button type="submit">Next Step</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+    </div>
+</body>
+</html>
